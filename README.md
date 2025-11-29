@@ -1,79 +1,41 @@
-<<<<<<< HEAD
-# React + TypeScript + Vite
+# playstation_Cafe (PCafe)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple **PlayStation Cafe Management System** built with modern web technologies.  
+This project helps cafe owners manage devices, track customer sessions, and handle orders efficiently.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## React Compiler
+- **Manage Cafe Devices**  
+  Add, edit, and remove devices available for rent in the cafe (PlayStations, PCs, etc.).  
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+- **Track Sessions**  
+  Start and end sessions for customers using devices, and automatically calculate usage duration.  
 
-Note: This will impact Vite dev & build performances.
+- **Manage Orders**  
+  Create and track orders for cafe products like snacks and drinks.  
 
-## Expanding the ESLint configuration
+- **Backend API**  
+  Node.js + Express backend to handle all business logic and database operations.  
+  Includes endpoints for devices, sessions, orders, and user authentication.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **Database Support**  
+  PostgreSQL database with tables for devices, sessions, users, and orders.  
+  Includes triggers and relationships to keep data consistent.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- **Role-based Access**  
+  Admins can manage all data, employees can track sessions and orders.  
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## Technologies Used
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- **Frontend:** React + TypeScript + Vite  
+- **Backend:** Node.js + Express  
+- **Database:** PostgreSQL  
+- **Version Control:** Git + GitHub  
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-=======
-# playstation_cafe_M_sytem
->>>>>>> 8bb4daa2b962b0c62608d665cf32c12b7fc81cda
+
