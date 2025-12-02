@@ -1,4 +1,4 @@
-# 🎮 playstation_Cafe (PCafe)
+# 🎮 playstation_Cafe (CafeStation Manager)
 
 A simple **PlayStation Cafe Management System** built with modern web technologies.  
 This project helps cafe owners manage devices, track customer sessions, and handle orders efficiently.
