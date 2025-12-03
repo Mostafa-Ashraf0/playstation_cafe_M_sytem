@@ -1,0 +1,100 @@
+:root{
+    --main-color:rgb(15, 23, 41);
+    --sec-color:rgb(101, 117, 139);
+}
+
+
+.header{
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    padding: 5px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.title{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    line-height: 25px;
+}
+
+.title .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title .text .head{
+    margin: 0;
+    font-size: 21.25px;
+    color: var(--main-color);
+}
+
+.title .text .subhead{
+    font-size: 12.75;
+    font-weight: 500;
+    margin: 0;
+    color: var(--sec-color);
+}
+
+.logo{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.logo img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit:cover;
+}
+
+.info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.info .time,
+.info .status{
+    width: 150px;
+    height: 30px;
+    color: var(--main-color);
+    font-size: 15px;
+    display: flex;
+    font-weight: 500;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px;
+    gap: 5px;
+    border-radius: 5px;
+}
+
+.info .time{
+
+}
+
+.info .time img{
+    width: 20px;
+    height: 20px;
+}
+
+.info .status{
+    background-color: rgba(221, 226, 233, 0.486);
+}
+
+.info .status .color{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgb(70, 161, 70);
+}
